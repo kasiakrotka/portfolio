@@ -128,9 +128,22 @@
 
 .label {
   font-weight: bold;
+  width: 75px;
 }
 
 .label-content {}
+
+h3{
+  margin-bottom: 5px;
+}
+
+.separator{
+  height: 5px;
+  width: 100px;
+  background-color: rgb(140, 124, 214);
+  background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+  margin-bottom: 10px
+}
 
 .about-me-container {
   margin: 20px;
@@ -169,8 +182,8 @@
 }
 
 .skill-box{
-    width: 180px;
-    height: 180px;
+    width: 100px;
+    height: 100px;
     margin: 10px;
     display: flex;
     flex-direction: column;
@@ -208,22 +221,35 @@
 }
 
 .project-box{
+  all: unset;
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: flex-start;
   margin-bottom: 20px;
   padding: 20px;
   transition: all ease-in-out 0.3s;
+  cursor: pointer;
+}
+
+.project-box p {
+  color: black;
 }
 
 .project-box:hover{
   background-color: #2574fc15;
 }
 
+.project-desc{
+  max-width: 340px;
+  min-width: 200px;
+}
+
 .project-box img{
   width: 200px;
   margin-right: 20px;
+  margin-bottom: 20px;
 }
 
 .app-title{
@@ -235,6 +261,6 @@
 }
 
 .note{
-    margin: 10px;
+    margin-top: 25px;
     color: grey;
 }

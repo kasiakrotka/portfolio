@@ -1,16 +1,16 @@
 <div class="main-container scrollbar-primary">
   <div class="basic-info-container">
     <div class="lang-container btn-group btn-group-toggle" data-toggle="buttons">
-      <label class="btn btn-outline-dark active">
+      <label (click)="onSwitchLang('PL')" class="btn btn-outline-dark active">
         <input type="radio" name="options" id="PL" autocomplete="off" checked> PL
       </label>
-      <label class="btn btn-outline-dark">
+      <label (click)="onSwitchLang('ENG')" class="btn btn-outline-dark">
         <input type="radio" name="options" id="ENG" autocomplete="off"> ENG
       </label>
     </div>
     <div class="photo-container"><img src="assets/head my .png" alt="Hi!"></div>
     <div class="info-container">
-      <h3>Name Surname</h3>
+      <h3>{{strings.name}}</h3>
       <div class="info">
         <div class="icon">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt"
@@ -20,8 +20,8 @@
             <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
           </svg>
         </div>
-        <div class="label">City:</div>
-        <div class="label-content"></div>
+        <div class="label">{{strings.titles.city}}</div>
+        <div class="label-content">{{strings.content.city}}</div>
       </div>
       <div class="info">
         <div class="icon">
@@ -32,8 +32,8 @@
             <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
           </svg>
         </div>
-        <div class="label">Phone:</div>
-        <div class="label-content"></div>
+        <div class="label">{{strings.titles.phone}}</div>
+        <div class="label-content">{{strings.content.phone}}</div>
       </div>
       <div class="info">
         <div class="icon">
@@ -43,13 +43,14 @@
               d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383l-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z" />
           </svg>
         </div>
-        <div class="label">Email:</div>
-        <div class="label-content"></div>
+        <div class="label">{{strings.titles.email}}</div>
+        <div class="label-content">{{strings.content.email}}</div>
       </div>
     </div>
   </div>
   <div class="about-me-container">
-    <h3>About me</h3>
+    <h3>{{strings.titles.about_me}}</h3>
+    <div class="separator"></div>
     <div class="text-box">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dapibus quam tristique metus porttitor aliquam.
       Nullam sed ultrices mi. Quisque ultrices velit a pulvinar ullamcorper. Maecenas pellentesque nibh libero, eu
@@ -59,54 +60,61 @@
   </div>
 
   <div class="about-me-container">
-    <h3>Education</h3>
+    <h3>{{strings.titles.education}}</h3>
+    <div class="separator"></div>
     <div class="text-box">
-      2017-2021
+      {{strings.content.education.year}}
     </div>
-    <div class="text-box">Wrocław University of Science and Technology</div>
-    <div class="text-box">Major: Computer Science<br>Specialization: Internet Engeenering</div>
+    <div class="text-box">{{strings.content.education.school}}</div>
+    <div class="text-box">{{strings.content.education.major}}<br>{{strings.content.education.spec}}</div>
   </div>
 
   <div class="skills-container">
-    <h3>Skills</h3>
+    <h3>{{strings.titles.skills}}</h3>
+    <div class="separator"></div>
     <div class="skills-list">
       <div class="skill-box"><img src="assets/html5.png" alt="HTML4">
         <p class="skill-name">HTML5</p>
-        <p class="description">Good</p>
+        <p class="description">{{strings.content.skills.good}}</p>
       </div>
       <div class="skill-box"><img src="assets/css.png" alt="CSS">
         <p class="skill-name">CSS3</p>
-        <p class="description">Good</p>
+        <p class="description">{{strings.content.skills.good}}</p>
       </div>
       <div class="skill-box"><img src="assets/js.png" alt="JavaScript">
         <p class="skill-name">JavaScript</p>
-        <p class="description">Basic*</p>
+        <p class="description">{{strings.content.skills.basic}}*</p>
       </div>
+    </div>
+    <div class="skills-list">
       <div class="skill-box"><img src="assets/angular.png" alt="Angular">
         <p class="skill-name">Angular</p>
-        <p class="description">Good</p>
+        <p class="description">{{strings.content.skills.good}}</p>
       </div>
       <div class="skill-box"><img src="assets/protractor.png" alt="Protractor">
         <p class="skill-name">Protractor</p>
-        <p class="description">Basic*</p>
+        <p class="description">{{strings.content.skills.basic}}*</p>
       </div>
       <div class="skill-box"><img src="assets/spring.png" alt="Spring Boot">
         <p class="skill-name">Spring Boot</p>
-        <p class="description">Basic</p>
+        <p class="description">{{strings.content.skills.basic}}</p>
       </div>
     </div>
-    <div class="note">* - I'm happy to learn more or I'm doing it right now.</div>
+    <div class="note">{{strings.content.note}}</div>
   </div>
   <div class="projects-container">
-      <h3>Projects</h3>
-      <div class="projects-list">
-        <div class="project-box" *ngFor="let project of projectsArray">
-          <img src={{project.imgUrl}}>
-          <div class="project-desc">
-            <p class="app-title">{{project.title}}</p>
-            <p class="app-desc">{{project.description}}</p>
-            <span class="app-tech">Technologies used:<span *ngFor="let technology of project.technologiesArray; let indexOfelement=index"> {{technology}}<span *ngIf="indexOfelement < project.technologiesArray.length - 1">,</span></span></span>
+    <h3>{{strings.titles.projects}}</h3>
+    <div class="separator"></div>
+    <div class="projects-list">
+      <a href={{project.url}}  target="_blank" class="project-box" *ngFor="let project of projectsArray">
+        <img src={{project.imgUrl}}>
+        <div class="project-desc">
+          <p class="app-title">{{project.title}}</p>
+          <p class="app-desc">{{project.description}}</p>
+          <span class="app-tech">{{strings.content.technologies}}<span
+              *ngFor="let technology of project.technologiesArray; let indexOfelement=index"> {{technology}}<span
+                *ngIf="indexOfelement < project.technologiesArray.length - 1">,</span></span></span>
         </div>
-      </div>
+      </a>
+    </div>
   </div>
-</div>
