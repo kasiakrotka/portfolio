@@ -32,7 +32,8 @@ export class Strings {
                 basic: "basic"
             },
             note: "* - I'm happy to learn more or I'm doing it right now.",
-            technologies: "Technologies used: "
+            technologies: "Technologies used: ",
+            about_me_desc: "My name is Katarzyna and I have always enjoyed creative activities and those that allow me to use my artistic skills. Web development is one such activity. It also allows me to use my technical skills. I like to both create something out of nothing and recreate things while discovering how they were built. My curiosity is the best drive in my development and learning."
         }
     }
 
@@ -63,7 +64,8 @@ export class Strings {
                 basic: "podsatwowy"
             },
             note: "* - jestem chętna do dalszej nauki lub właśnie się uczę.",
-            technologies: "Użyte technologie: "
+            technologies: "Użyte technologie: ",
+            about_me_desc: "Nazywam się Katarzyna i od zawsze najwięcej radości i satysfakcji sprawiają mi zajęcia kreatywne i takie, które pozwalają na wykorzystanie artystycznych umiejętnośći. Tworzenie stron internetowych jest jednym z takich zajęć. Pozwala mi ono również na wykorzystywanie swojich umiejętnosci technicznych. Lubię nie tylko tworzyć coś z niczego ale także odtwarzać rzeczy jednocześnie odkrywając jak zostały zbudowane. Moja ciekawość jest najlepszym napędem w moim rozwju i nauce."
         }
     }
     constructor() {
