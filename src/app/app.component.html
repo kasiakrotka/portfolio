@@ -70,27 +70,27 @@
   <div class="skills-container">
     <h3>Skills</h3>
     <div class="skills-list">
-      <div class="skill-box"><img src="../assets/html5.png" alt="HTML4">
+      <div class="skill-box"><img src="assets/html5.png" alt="HTML4">
         <p class="skill-name">HTML5</p>
         <p class="description">Good</p>
       </div>
-      <div class="skill-box"><img src="../assets/css.png" alt="CSS">
+      <div class="skill-box"><img src="assets/css.png" alt="CSS">
         <p class="skill-name">CSS3</p>
         <p class="description">Good</p>
       </div>
-      <div class="skill-box"><img src="../assets/js.png" alt="JavaScript">
+      <div class="skill-box"><img src="assets/js.png" alt="JavaScript">
         <p class="skill-name">JavaScript</p>
         <p class="description">Basic*</p>
       </div>
-      <div class="skill-box"><img src="../assets/angular.png" alt="Angular">
+      <div class="skill-box"><img src="assets/angular.png" alt="Angular">
         <p class="skill-name">Angular</p>
         <p class="description">Good</p>
       </div>
-      <div class="skill-box"><img src="../assets/protractor.png" alt="Protractor">
+      <div class="skill-box"><img src="assets/protractor.png" alt="Protractor">
         <p class="skill-name">Protractor</p>
         <p class="description">Basic*</p>
       </div>
-      <div class="skill-box"><img src="../assets/spring.png" alt="Spring Boot">
+      <div class="skill-box"><img src="assets/spring.png" alt="Spring Boot">
         <p class="skill-name">Spring Boot</p>
         <p class="description">Basic</p>
       </div>
@@ -106,8 +106,6 @@
             <p class="app-title">{{project.title}}</p>
             <p class="app-desc">{{project.description}}</p>
             <span class="app-tech">Technologies used:<span *ngFor="let technology of project.technologiesArray; let indexOfelement=index"> {{technology}}<span *ngIf="indexOfelement < project.technologiesArray.length - 1">,</span></span></span>
-          </div>
-          <hr style="display: block;">
         </div>
       </div>
   </div>
