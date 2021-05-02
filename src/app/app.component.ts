@@ -12,24 +12,27 @@ export class AppComponent {
   projectsArray: Project[];
   projectsNum: number; 
   strings: any;
+  stringsObj: Strings; 
 
   constructor(){
-    this.strings  = (new Strings()).pl;
-    this.projectsArray = (new Strings()).projects_pl;
+    this.stringsObj = new Strings(); 
+    this.strings  = this.stringsObj.pl;
+    this.projectsArray = this.stringsObj.projects_pl;
     this.projectsNum = this.projectsArray.length;
+    console.log(this.projectsArray);
   }
 
   onSwitchLang(lang: string){
     if(lang == 'PL')
     {
-      this.strings = (new Strings()).pl;
-      this.projectsArray = (new Strings()).projects_pl;
+      this.strings = this.stringsObj.pl;
+      this.projectsArray = this.stringsObj.projects_pl;
     }
 
     if(lang == 'ENG')
     {
-      this.strings = (new Strings()).eng;
-      this.projectsArray = (new Strings()).projects_eng;
+      this.strings = this.stringsObj.eng;
+      this.projectsArray = this.stringsObj.projects_eng;
     }
   }
 
