@@ -72,10 +72,11 @@ export class Strings {
         this.projects_eng = new Array();
         this.projects_eng.push(new Project("Quiz", "Simple quiz application with simple design and graph of given answers", "https://kasiakrotka.github.io/SimpleQuiz/", ['HTML', 'CSS', 'JavaScript'], "assets/quiz.png"));
         this.projects_eng.push(new Project("Mood Tracker", "Application let user track his mood through the month. The purpose of app is therapeutic. User have a chance to fill fomrs which help him describe his day. Data collected in the app can be displayed as a graph.", "https://kasiakrotka.github.io/MoodTracker/", ['HTML', 'CSS', 'JavaScript', 'Angular'], "assets/moodtracker.png"));
+        this.projects_eng.push(new Project("Virtual Art Gallery (in progress)", "Application is simplified recration of 'https://www.wikiart.org/'. It's purpose is to browse artists and theirs art.", "https://kasiakrotka.github.io/ArtStock/", ["HTML", "CSS", "Vanilla JavaScript"], "assets/artstock.png"));
 
         this.projects_pl = new Array();
         this.projects_pl.push(new Project("Quiz", "Prosta aplikacja będąca szablonem do utworzenia quizu. Na podsatwie udzielonych odpowiedzi, jako wynik wyświetlany jest graf.", "https://kasiakrotka.github.io/SimpleQuiz/", ['HTML', 'CSS', 'JavaScript'], "assets/quiz.png"));
         this.projects_pl.push(new Project("Mood Tracker", "Aplikacja pozwala użytkownikowi na śledzenie swoich emocji w ciągu miesiąca. Użytkownik ma możliwość wypełniania formularzy, które pomagają w opisaniu dnia. Dane zebrane w aplikacji wyświetlane są w formie grafu.", "https://kasiakrotka.github.io/MoodTracker/", ['HTML', 'CSS', 'JavaScript', 'Angular'], "assets/moodtracker.png"));
-
+        this.projects_eng.push(new Project("Wirtualna Galeria Sztuki (w trakcie)", "Aplikacja została stworzona na wzór 'https://www.wikiart.org/'. Pozwala na przeglądanie artystów i ich prac.", "https://kasiakrotka.github.io/ArtStock/", ["HTML", "CSS", "Vanilla JavaScript"], "assets/artstock.png"));
     }
 }
